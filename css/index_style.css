@@ -3,6 +3,9 @@ body {
   padding: 0;
   background-color: #adc587;
 }
+.container {
+  width: 100%;
+}
 
 .nav_content {
   display: flex;
@@ -49,15 +52,26 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  padding-bottom: 200px;
 }
 
-.label_container label {
-  padding: 10px;
-  color: white;
-  font-size: 35px;
+.styled-button {
+    padding: 10px;
+    color: white;
+    font-family: "Montez";
+    border-radius: 37px;
+    background-color: rgba(227, 157, 68, 0.68); /* Fondo semi-transparente */
+    border: 0;
+    font-size: 40px;
+    transition: background-color 0.3s, color 0.3s; /* transcicion para el hover */
+    /* se genera automaticamente */
+    -webkit-border-radius: 37px;
+    -moz-border-radius: 37px;
+    -ms-border-radius: 37px;
+    -o-border-radius: 37px;
 }
 
-.font_label {
-  font-family: "Montez";
+.styled-button:hover{
+    background-color: white;
+    color: #e39d44;
 }
