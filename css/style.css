@@ -12,7 +12,7 @@ body {
 }
 
 .nav_content .alineacion {
-    display: flex;
+  display: flex;
 }
 
 .size_logo {
@@ -26,9 +26,10 @@ body {
 }
 
 .labelpad {
-    display: flex;
+  display: flex;
   align-items: center;
   margin-right: 20px;
+  font-weight: bold;
 }
 
 .content {
