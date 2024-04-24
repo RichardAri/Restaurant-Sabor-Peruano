@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #adc587;
+}
+
+.nav_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.nav_content .alineacion {
+    display: flex;
+}
+
+.size_logo {
+  width: 150px;
+  padding-left: 30px;
+}
+
+.containersvg {
+  width: 50px;
+  height: auto;
+}
+
+.labelpad {
+    display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.content {
+  position: relative;
+}
+
+.full_screen img {
+  width: 100vw;
+  height: calc(100vh - 90px);
+  object-fit: cover;
+}
+
+.label_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+.label_container label {
+  padding: 10px;
+  color: white;
+  font-size: 35px;
+}
+
+.font_label {
+  font-family: "Montez";
+}
