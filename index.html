@@ -30,12 +30,31 @@
         <div class="content">
             <div class="full_screen">
                 <div class="label_container">
-                    <input id="cartaButton" class="styled-button "type="button" value="  Nuestra Carta   ">
-                    <input id="reservaButton" class="styled-button"type="button" value="   Reserva Aqui    ">
-                    <input id="deliveryButton" class="styled-button"type="button" value="    Delivery    ">
+                    <input id="cartaButton" class="styled-button" type="button" value="  Nuestra Carta   ">
+                    <input id="reservaButton" class="styled-button" type="button" value="   Reserva Aqui    ">
+                    <input id="deliveryButton" class="styled-button" type="button" value="    Delivery    ">
                 </div>
                 <img src="./img/portada.jpg" alt="Plato de portada" />
             </div>
         </div>
 </body>
+<script>
+    // Obtener referencias a los botones
+    var cartaButton = document.getElementById("cartaButton");
+    var reservaButton = document.getElementById("reservaButton");
+    var deliveryButton = document.getElementById("deliveryButton");
+
+    // Agregar eventos de clic a los botones
+    cartaButton.addEventListener("click", function() {
+        window.location.href = "./src/carta.html"; // Cambiar por la URL correcta
+    });
+
+    reservaButton.addEventListener("click", function() {
+        window.location.href = "./src/reserva.html"; // Cambiar por la URL correcta
+    });
+
+    deliveryButton.addEventListener("click", function() {
+        window.location.href = "./src/delivery.html"; // Cambiar por la URL correcta
+    });
+</script>
 </html>
