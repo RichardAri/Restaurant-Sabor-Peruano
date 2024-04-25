@@ -1,0 +1,25 @@
+.flag {
+    display: flexbox;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .izquierda {
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
+  }
+  
+  .centro {
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
+  }
+  
+  .derecha {
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
+  }
+  
+  .centro p {
+    font-family: "Montez";
+    padding: 40px;
+    font-size: 30px;
+  }
+  
