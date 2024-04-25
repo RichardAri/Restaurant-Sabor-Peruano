@@ -1,26 +1,40 @@
+body{
+  overflow: hidden;
+}
 .flag {
-  display: flexbox;
-  flex-direction: column;
-  width: 100vw;
+display: flex;
+}
+
+.izquierda,
+.centro,
+.derecha{
+  flex: 1;
+}
+
+.izquierda,
+.derecha {
+  width: calc(100vw/3);
   height: 100vh;
+  background-size: cover;
+  object-fit: cover; 
 }
 
 .izquierda {
-  object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
-}
-
-.centro {
-  object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
+  background-image: url("../img/Tallarines_Rojos.png");
 }
 
 .derecha {
-  object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
+  background-image: url("../img/plato3.jpg");
 }
 
 .centro p {
   font-family: "Montez";
+  margin-top: 170px;
   padding: 40px;
   font-size: 30px;
+  text-align: center;
+}
+
+.color_centro{
   background-color: #ADC587;
-  object-fit: cover;
 }
