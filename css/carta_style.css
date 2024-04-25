@@ -1,25 +1,36 @@
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
 .flag {
-    display: flexbox;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .izquierda {
-    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
-  }
-  
-  .centro {
-    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
-  }
-  
-  .derecha {
-    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
-  }
-  
-  .centro p {
-    font-family: "Montez";
-    padding: 40px;
-    font-size: 30px;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.izquierda,
+.centro,
+.derecha {
+  flex: 1;
+}
+
+.izquierda img,
+.derecha img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.centro {
+  padding: 2rem;
+  font-size: 30px;
+  background-color: #adc587;
+  font-family: "Montez";
+  display: flex;
+  align-items: center;
+  text-align: center; 
+}
+

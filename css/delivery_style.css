@@ -1,0 +1,95 @@
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 60vh;
+}
+
+.izquierda,
+.derecha {
+  flex: 1;
+}
+
+.izquierda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.derecha {
+  width: 40vw;
+  background-color: #adc587;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.derecha h1,
+.derecha p {
+  text-align: center;
+  color: black;
+  margin-bottom: 0px;
+}
+
+.derecha h1 {
+  padding-top: 20px;
+}
+
+.abajo {
+  width: 100vw;
+  height: 40vh;
+  background-color: black;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.abajo h1,
+.abajo h2 {
+    margin-bottom: 0px;
+    font-family: "Montez";
+}
+
+.abajo h1{
+  font-size: 38px;
+}
+
+.abajo h2{
+  margin-top: 10px;
+}
+
+
+.abajo p {
+  text-align: left;
+  padding-left: 100px;
+}
+
+.color_text {
+  color: white;
+  text-align: center;
+}
+
+.size_img {
+    width: 41px;
+    height: 35px;
+    margin: 10px;
+}
+
+.formas-redes {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.formas-pago {
+  padding-left: 85px; /* Agrega padding a la izquierda de las formas de pago */
+  margin-bottom: 50px;
+}
+
+.redes {
+  padding-right: 60px; /* Agrega padding a la derecha de las redes sociales */
+  margin-bottom: 50px;
+}
