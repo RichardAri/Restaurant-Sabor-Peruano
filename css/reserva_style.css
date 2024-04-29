@@ -1,7 +1,5 @@
 body {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
 .izquierda,
@@ -10,8 +8,6 @@ body {
   height: 60vh;
   background-size: cover;
   background-position: center;
-  margin: 0;
-  padding: 0;
 }
 
 .izquierda {
@@ -49,7 +45,9 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 0px;
+  width: 100vw;
+  height: 40vh;
 }
 
 .text_container {
