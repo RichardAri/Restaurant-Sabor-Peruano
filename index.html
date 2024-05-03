@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet" />
 </head>
-    <div class="container">
+<section>
+    <div class="containerindex">
         <nav class="nav_content">
             <div class="alineacion">
-                <a href="./src/aboutus.html">
+                <a href="#aboutus">
                     <img class="size_logo" src="./img/logo.png" alt="logo de pagina">
                 </a>
             </div>
@@ -30,31 +31,128 @@
         <div class="content">
             <div class="full_screen">
                 <div class="label_container">
-                    <input id="cartaButton" class="styled-button" type="button" value="  Nuestra Carta   ">
-                    <input id="reservaButton" class="styled-button" type="button" value="   Reserva Aqui    ">
-                    <input id="deliveryButton" class="styled-button" type="button" value="    Delivery    ">
+                    <a href="#carta">
+                        <input class="styled-button" type="button" value="  Nuestra Carta   ">
+                    </a>
+                    <a href="#reserva">
+                        <input class="styled-button" type="button" value="   Reserva Aqui    ">
+                    </a>
+                    <a href="#delivery">
+                        <input class="styled-button" type="button" value="    Delivery    ">
+                    </a>
                 </div>
                 <img src="./img/portada.jpg" alt="Plato de portada" />
+        </div>
+    </div>
+</section>
+<section id="aboutus">
+    <div class="flagaboutus">
+        <div>
+            <div class="izquierdaaboutus"></div>
+        </div>
+        <div class="color_centro">
+            <div class="centroaboutus">
+                <p>"Sabor Peruano" es un restaurante que ofrece una fusión única entre la cocina peruana y las pastas italianas. Con platos como tallarines con ají de gallina y ravioles de lomo saltado, combina sabores auténticos con creatividad culinaria. Es el lugar perfecto para una experiencia gastronómica sorprendente y deliciosa.</p>
             </div>
         </div>
+        <div>
+            <img class="derechaaboutus"></div>
+        </div>
+    </div>
+</section>
+<section id="carta">
+    <center><h1>Nuestra Carta</h1></center>
+    <div class="containercarta">
+      <img src="../img/carta1.jpeg" alt="plato carta 1" class="card" />
+      <img src="../img/carta2.jpeg" alt="plato carta 2" class="card" />
+      <img src="../img/carta3.jpeg" alt="plato carta 3" class="card" />
+      <img src="../img/carta4.jpeg" alt="plato carta 4" class="card" />
+      <img src="../img/carta5.jpeg" alt="plato carta 5" class="card" />
+    </div>
+    <div class="contenedor_platos">
+      <div class="platos_left">
+        <div class="align_platos">
+          <div class="izquierda">
+            <h2>Platos</h2>
+            <p>Pasta de verduras</p>
+            <p>Espaguetti sisco</p>
+            <p>Fettuccione Alfredo</p>
+          </div>
+          <div class="derecha">
+            <h2>Precios</h2>
+            <p>25</p>
+            <p>35</p>
+            <p>30</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="platos_right">
+        <div class="align_platos">
+          <div class="izquierda">
+            <h2>Platos</h2>
+            <p>Presliana especial</p>
+            <p>Tallarines rojos</p>
+            <p>Tallarines saltados</p>
+          </div>
+          <div class="derecha">
+            <h2>Precios</h2>
+            <p>25</p>
+            <p>35</p>
+            <p>30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section id="reserva">
+    <div class="flag">
+        <div class="izquierdareserva"></div>
+        <div class="derechareserva"></div>
+    </div>
+    <div class="abajoreserva">
+        <div id="row">
+            <h1 class="font_text titulo">Catering y Eventos</h1>
+        </div>
+        <div class="text_container">
+            <p class="font_text parrafo">Queremos ser parte de tu evento especial.</p>
+            <input type="button" class="btn" value="   HAS TU PEDIDO   ">
+        </div>
+    </div>
+</section>
+<section id="delivery">
+    <div class="containerdelivery">
+        <div class="izquierdadelivery">
+            <img src="../img/plato_de_pasta.png" alt="">
+        </div>
+        <div class="derechadelivery">
+            <h1>Horario de Atención</h1>
+            <p>Lunes a jueves</p>
+            <p>12:00 - 23:00 h</p>
+            <p>Viernes - Sabado</p>
+            <p>12:00 - 00:00 h</p>
+            <p>Domingo</p>
+            <p>12:30 - 22:30 h</p>
+        </div>
+    </div>
+    <div class="abajo">
+        <h1 class="color_text">Ubicanos</h1>
+        <h2 class="color_text">Av. Ejercito 284</h2>
+        <h2 class="color_text">Yanahura, Arequipa, Peru</h2>
+        <p class="color_text">Formas de Pago</p>
+        <div class="formas-redes">
+            <div class="formas-pago">
+                <img src="../img/mastercard.png" alt="icono de mastercard" class="size_img">
+                <img src="../img/visa.png" alt="icono de visa" class="size_img">
+            </div>
+            <div class="redes">
+                <img src="../img/whatsapp.png" alt="icono de whatsapp" class="size_img">
+                <img src="../img/instagram.png" alt="icono de instagram" class="size_img">
+                <img src="../img/tiktok.png" alt="icono de tiktok" class="size_img">
+                <img src="../img/facebook.png" alt="icono de facebook" class="size_img">
+            </div>
+        </div>
+    </div>
+</section>
 </body>
-<script>
-    // Obtener referencias a los botones
-    var cartaButton = document.getElementById("cartaButton");
-    var reservaButton = document.getElementById("reservaButton");
-    var deliveryButton = document.getElementById("deliveryButton");
-
-    // Agregar eventos de clic a los botones
-    cartaButton.addEventListener("click", function() {
-        window.location.href = "./src/carta.html"; // Cambiar por la URL correcta
-    });
-
-    reservaButton.addEventListener("click", function() {
-        window.location.href = "./src/reserva.html"; // Cambiar por la URL correcta
-    });
-
-    deliveryButton.addEventListener("click", function() {
-        window.location.href = "./src/delivery.html"; // Cambiar por la URL correcta
-    });
-</script>
 </html>
