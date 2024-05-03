@@ -193,11 +193,6 @@ font-size: 20px;
 
 /* * ---------------------------------------------- RESERVA */
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .izquierdareserva,
 .derechareserva {
   width: 50vw;
