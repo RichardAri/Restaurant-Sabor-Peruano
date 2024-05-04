@@ -5,14 +5,20 @@
 }
 
 /* * ---------------------------------------------- INDEX */
-
-body {
+body{
   margin: 0;
   padding: 0;
-  background-color: var(--primaryColor);
 }
+
+#sectionindex {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .containerindex {
   width: 100%;
+  background-color: var(--primaryColor);
 }
 
 .nav_content {
@@ -51,6 +57,7 @@ body {
   width: 100vw;
   height: calc(100vh - 90px);
   object-fit: cover;
+  
 }
 
 .label_container {
@@ -85,6 +92,12 @@ body {
 }
 /* * ---------------------------------------------- ABOUT US */
 
+#sectionaboutus{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .flagaboutus{
 display: flex;
 }
@@ -93,6 +106,8 @@ display: flex;
 .centroaboutus,
 .derechaaboutus{
   flex: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .izquierdaaboutus,
@@ -125,7 +140,8 @@ display: flex;
 
 
 /* * ---------------------------------------------- CARTA */
-#carta {
+
+#sectionCarta {
   background-color: var(--primaryColor);
   width: 100vw;
   height: 100vh;
@@ -153,8 +169,8 @@ display: flex;
 
 h1 {
   font-size: 50px;
-  padding-top: 0px;
   font-family: var(--fontfamily);
+  margin: 0;
 }
 
 .card:first-child {
