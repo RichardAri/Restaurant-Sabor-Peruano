@@ -8,6 +8,7 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: var(--primaryColor);
 }
 
 #sectionindex {
@@ -247,7 +248,7 @@ font-size: 20px;
   font-size: 30px;
 }
 
-.btn {
+.buton {
   background-color: var(--primaryColor);
   border-radius: 27px;
   padding: 15px 30px;

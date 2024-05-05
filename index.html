@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabor Peruano</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index_style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,15 +33,15 @@
         </header>
         <div class="content">
             <div class="full_screen">
-                <div class="label_container">
+                <div class="label_container row"><!-- row:boostrap botones responsivos-->
                     <a href="#sectionCarta">
-                        <input class="styled-button" type="button" value="  Nuestra Carta   ">
+                        <input class="styled-button btn" type="button" value="  Nuestra Carta   ">
                     </a>
                     <a href="#sectionReserva">
-                        <input class="styled-button" type="button" value="   Reserva Aqui    ">
+                        <input class="styled-button btn" type="button" value="   Reserva Aqui    ">
                     </a>
                     <a href="#sectionDelivery">
-                        <input class="styled-button" type="button" value="    Delivery    ">
+                        <input class="styled-button btn" type="button" value="    Delivery    ">
                     </a>
                 </div>
                 <img src="./img/portada.jpg" alt="Plato de portada" />
@@ -59,17 +60,16 @@
         </div>
         <div>
             <img class="derechaaboutus"></div>
-        </div>
     </div>
 </section>
-<section id="sectionCarta">
+<section id="sectionCarta row"><!-- row:boostrap pagina responsivas pero se vuelve mas pequeña-->
     <center><h1>Nuestra Carta</h1></center>
-    <div class="containercarta">
-      <img src="../img/carta1.jpeg" alt="plato carta 1" class="card" />
-      <img src="../img/carta2.jpeg" alt="plato carta 2" class="card" />
-      <img src="../img/carta3.jpeg" alt="plato carta 3" class="card" />
-      <img src="../img/carta4.jpeg" alt="plato carta 4" class="card" />
-      <img src="../img/carta5.jpeg" alt="plato carta 5" class="card" />
+    <div class="containercarta row">
+      <img src="../img/carta1.jpeg" alt="plato carta 1" class="card img-fluid" />
+      <img src="../img/carta2.jpeg" alt="plato carta 2" class="card img-fluid" />
+      <img src="../img/carta3.jpeg" alt="plato carta 3" class="card img-fluid" />
+      <img src="../img/carta4.jpeg" alt="plato carta 4" class="card img-fluid" />
+      <img src="../img/carta5.jpeg" alt="plato carta 5" class="card img-fluid" />
     </div>
     <div class="contenedor_platos">
       <div class="platos_left">
@@ -107,7 +107,7 @@
       </div>
     </div>
 </section>
-<section id="sectionReserva">
+<section id="sectionReserva row">
     <div class="flag">
         <div class="izquierdareserva"></div>
         <div class="derechareserva"></div>
@@ -118,7 +118,7 @@
         </div>
         <div class="text_container">
             <p class="font_text parrafo">Queremos ser parte de tu evento especial.</p>
-            <input type="button" class="btn" value="   HAS TU PEDIDO   ">
+            <input type="button" class="buton btn" value="   HAS TU PEDIDO   ">
         </div>
     </div>
 </section>
@@ -156,5 +156,8 @@
         </div>
     </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
