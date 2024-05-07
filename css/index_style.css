@@ -101,13 +101,15 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  font-family: var(--fontfamily);
+  font-size: 25px;
 }
 
-#centroAboutUs p {
-  max-width: 100%;/* Para asegurar que el texto no se desborde del contenedor *//* Ajusta el relleno según sea necesario */
-  padding: 300px 50px 0 50px;
+#centroAboutUs {
+  text-align: center;/* Para asegurar que el texto no se desborde del contenedor *//* Ajusta el relleno según sea necesario */
+  align-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .contenedorSecundario {
@@ -130,12 +132,6 @@ body {
   #centroAboutUs p {
     max-width: 100%;/* Para asegurar que el texto no se desborde del contenedor *//* Ajusta el relleno según sea necesario */
     padding: 0;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
