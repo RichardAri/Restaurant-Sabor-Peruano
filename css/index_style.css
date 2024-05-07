@@ -1,14 +1,16 @@
 :root {
-  --fontfamily: 'Montez';
+  --fontfamily: "Montez";
   --secondColor: #e39d44;
   --primaryColor: #adc587;
 }
 
 /* * ---------------------------------------------- INDEX */
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: var(--primaryColor);
+  width: 100%;
+  height: 100%;
 }
 
 #sectionindex {
@@ -58,7 +60,6 @@ body{
   width: 100vw;
   height: calc(100vh - 90px);
   object-fit: cover;
-  
 }
 
 .label_container {
@@ -72,73 +73,81 @@ body{
 }
 
 .styled-button {
-    padding: 10px;
-    color: white;
-    font-family: var(--fontfamily);
-    border-radius: 37px;
-    background-color: rgba(227, 157, 68, 0.68); /* Fondo semi-transparente */
-    border: 0;
-    font-size: 40px;
-    transition: background-color 0.3s, color 0.3s; /* transcicion para el hover */
-    /* se genera automaticamente */
-    -webkit-border-radius: 37px;
-    -moz-border-radius: 37px;
-    -ms-border-radius: 37px;
-    -o-border-radius: 37px;
+  padding: 10px;
+  color: white;
+  font-family: var(--fontfamily);
+  border-radius: 37px;
+  background-color: rgba(227, 157, 68, 0.68); /* Fondo semi-transparente */
+  border: 0;
+  font-size: 40px;
+  transition: background-color 0.3s, color 0.3s; /* transcicion para el hover */
+  /* se genera automaticamente */
+  -webkit-border-radius: 37px;
+  -moz-border-radius: 37px;
+  -ms-border-radius: 37px;
+  -o-border-radius: 37px;
 }
 
-.styled-button:hover{
-    background-color: white;
-    color: var(--secondColor);
+.styled-button:hover {
+  background-color: white;
+  color: var(--secondColor);
 }
 /* * ---------------------------------------------- ABOUT US */
 
-#sectionaboutus{
-  margin: 0;
+#sectionaboutus {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.flagaboutus{
-display: flex;
+#centroAboutUs p {
+  max-width: 100%;/* Para asegurar que el texto no se desborde del contenedor *//* Ajusta el relleno según sea necesario */
+  padding: 300px 50px 0 50px;
 }
 
-.izquierdaaboutus,
-.centroaboutus,
-.derechaaboutus{
+.contenedorSecundario {
   flex: 1;
+  width: calc(100% / 3);
   height: 100%;
-  width: 100%;
+  background-size: cover; /* Para que la imagen se ajuste al contenedor */
+  background-position: center;
 }
 
-.izquierdaaboutus,
-.derechaaboutus {
-  width: calc(100vw/3);
-  height: 100vh;
-  background-size: cover;
-  object-fit: cover; 
+@media screen and (max-width: 700px) {
+  #sectionaboutus {
+    flex-direction: column;
+  }
+  .contenedorSecundario {
+    width: 100%;
+    height: calc(100% / 3);
+  }
+
+  #centroAboutUs p {
+    max-width: 100%;/* Para asegurar que el texto no se desborde del contenedor *//* Ajusta el relleno según sea necesario */
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
-.izquierdaaboutus {
-  background-image: url("../img/Tallarines_Rojos.png");
+#izquierdaAboutUs {
+  background-image: url(../img/plato3.jpg)
 }
 
-.derechaaboutus {
-  background-image: url("../img/plato3.jpg");
-}
-
-.centroaboutus p {
-  font-family: var(--fontfamily);
-  margin-top: 170px;
-  padding: 40px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.color_centro{
+#centroAboutUs {
   background-color: var(--primaryColor);
 }
 
+#derechaAboutUs {
+  background-image: url(../img/Tallarines_Rojos.png);
+}
 
 /* * ---------------------------------------------- CARTA */
 
@@ -151,7 +160,7 @@ display: flex;
 .containercarta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 0 2rem;
 }
 
@@ -176,7 +185,7 @@ h1 {
 }
 
 .card:first-child {
-  margin-left: 0; 
+  margin-left: 0;
 }
 
 .card:last-child {
@@ -190,28 +199,29 @@ h1 {
   margin-top: 1rem;
 }
 
-.platos_left, .platos_right {
+.platos_left,
+.platos_right {
   flex: 1;
 }
 
-.align_platos{
+.align_platos {
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-.izquierda h2, p,
-.derecha h2, p{
-font-family: var(--fontfamily);
-text-align: center;
-font-size: 20px;
+.izquierda h2,
+p,
+.derecha h2,
+p {
+  font-family: var(--fontfamily);
+  text-align: center;
+  font-size: 20px;
 }
-
-
 
 /* * ---------------------------------------------- RESERVA */
 
-#sectionReserva{
+#sectionReserva {
   width: 100vw;
   height: 100vh;
 }
@@ -278,14 +288,13 @@ font-size: 20px;
   margin-right: auto;
 }
 
-.font_text{
-    font-family: var(--fontfamily);
+.font_text {
+  font-family: var(--fontfamily);
 }
-
 
 /* * ---------------------------------------------- DELIVERY */
 
-#sectionDelivery{
+#sectionDelivery {
   background-color: black;
 }
 
@@ -309,9 +318,9 @@ font-size: 20px;
 .derechadelivery {
   width: 40vw;
   background-color: var(--primaryColor);
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .derechadelivery h1,
@@ -329,25 +338,24 @@ font-size: 20px;
   width: 100vw;
   height: 40vh;
   background-color: black;
-  display: flex; 
+  display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .abajodelivery h1,
 .abajodelivery h2 {
-    margin-bottom: 0px;
-    font-family: var(--fontfamily);
+  margin-bottom: 0px;
+  font-family: var(--fontfamily);
 }
 
-.abajodelivery h1{
+.abajodelivery h1 {
   font-size: 38px;
 }
 
-.abajodelivery h2{
+.abajodelivery h2 {
   margin-top: 10px;
 }
-
 
 .abajodelivery p {
   text-align: left;
@@ -360,9 +368,9 @@ font-size: 20px;
 }
 
 .size_img {
-    width: 41px;
-    height: 35px;
-    margin: 10px;
+  width: 41px;
+  height: 35px;
+  margin: 10px;
 }
 
 .formas-redes {
