@@ -141,10 +141,14 @@ body {
 
 #centroAboutUs {
   background-color: var(--primaryColor);
+  background-size: cover;
+  background-position: center;
 }
 
 #derechaAboutUs {
   background-image: url(../img/Tallarines_Rojos.png);
+  background-size: cover;
+  background-position: center;
 }
 
 /* * ---------------------------------------------- CARTA */
@@ -236,10 +240,14 @@ h2,p {
 
 .izquierdareserva {
   background-image: url("../img/plato_fideos_verduras.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 .derechareserva {
   background-image: url("../img/plato_camarones.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .flag {
@@ -311,6 +319,7 @@ h2,p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .derechadelivery {
